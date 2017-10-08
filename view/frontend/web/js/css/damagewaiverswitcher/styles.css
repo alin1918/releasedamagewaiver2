@@ -1,0 +1,98 @@
+.frontend__actions-switch {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.frontend__actions-switch .frontend__actions-switch-checkbox {
+    display: none;
+}
+
+.frontend__field-control .frontend__actions-switch {
+    line-height: 3.2rem;
+}
+
+.frontend__actions-switch + .frontend__field-service {
+    min-width: 34rem;
+}
+
+._disabled .frontend__actions-switch-checkbox + .frontend__actions-switch-label,
+.frontend__actions-switch-checkbox.disabled + .frontend__actions-switch-label {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.frontend__actions-switch-checkbox:checked + .frontend__actions-switch-label:before {
+    left: 15px;
+}
+
+.frontend__actions-switch-checkbox:checked + .frontend__actions-switch-label:after {
+    background: #79a22e;
+}
+
+.frontend__actions-switch-checkbox:checked + .frontend__actions-switch-label .frontend__actions-switch-text:before {
+    content: attr(data-text-on);
+}
+
+.frontend__actions-switch-checkbox:focus + .frontend__actions-switch-label:before,
+.frontend__actions-switch-checkbox:focus + .frontend__actions-switch-label:after {
+    border-color: #007bdb;
+}
+
+._error .frontend__actions-switch-checkbox + .frontend__actions-switch-label:before,
+._error .frontend__actions-switch-checkbox + .frontend__actions-switch-label:after {
+    border-color: #e22626;
+}
+
+.frontend__actions-switch-label {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.frontend__actions-switch-label:before,
+.frontend__actions-switch-label:after {
+    left: 0;
+    position: absolute;
+    right: auto;
+    top: 0;
+}
+
+.frontend__actions-switch-label:before {
+    background: #ffffff;
+    border: 1px solid #aaa6a0;
+    border-radius: 100%;
+    content: '';
+    display: block;
+    height: 22px;
+    transition: left 0.2s ease-in 0s;
+    width: 22px;
+    z-index: 1;
+}
+
+.frontend__actions-switch-label:after {
+    background: #e3e3e3;
+    border: 1px solid #aaa6a0;
+    border-radius: 12px;
+    content: '';
+    display: block;
+    height: 22px;
+    transition: background 0.2s ease-in 0s;
+    vertical-align: middle;
+    width: 37px;
+    z-index: 0;
+}
+
+.frontend__actions-switch-text:before {
+    content: attr(data-text-off);
+    padding-left: 47px;
+    white-space: nowrap;
+}

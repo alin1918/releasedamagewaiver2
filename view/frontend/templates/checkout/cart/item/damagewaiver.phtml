@@ -1,0 +1,17 @@
+<?php
+/** @var \SalesIgniter\DamageWaiver\Block\Checkout\Cart\Item\Damagewaiver $block */
+?>
+<div id="cart-insurance" class="cart-insurance" data-bind="scope:'block-insurance'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+
+            {
+                "#cart-insurance": {
+                    "Magento_Ui/js/core/app": <?= $block->getJsLayout() ?>
+                }
+            }
+
+
+
+    </script>
+</div>

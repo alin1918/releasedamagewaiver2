@@ -1,2 +1,1 @@
-# releasedamagewaiver2
-Release Damage Waiver
+# mage2insurance
