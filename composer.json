@@ -1,5 +1,5 @@
 {
-  "name": "kjavitz/releasedamagewaiver2",
+  "name": "salesigniter/releasedamagewaiver2",
   "description": "A Magento 2 module that adds custom damagewaiver at checkout",
   "type": "magento2-module",
   "version": "2.0.20170908",
@@ -8,7 +8,8 @@
     "AFL-3.0"
   ],
   "require": {
-    "php": "~5.5.0|~5.6.0|~7.0.0"
+    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0",
+    "salesigniter/releaserental2": "*"
   },
   "autoload": {
     "files": [
