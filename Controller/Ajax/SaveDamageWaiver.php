@@ -196,7 +196,7 @@ class SaveDamageWaiver extends \Magento\Framework\App\Action\Action
                 $itemOptions = $buyRequest->getOptions();
                 $currentProduct = $currentItem->getProduct();
                 foreach ($currentProduct->getOptions() as $option) {
-                    if ($option->getTitle() === 'Damage Waiver') {
+                    if ($option->getTitle() === 'Damage Waiver:') {
                         $optionDamageWaiverId = $option->getId();
                         break;
                     }
@@ -217,7 +217,6 @@ class SaveDamageWaiver extends \Magento\Framework\App\Action\Action
                     /* Update item product options */
                     $this->registry->register('sirent_quote_id_frontend', $itemId);
                     $item = $quote->updateItem($itemId, $buyRequest);
-
 
                     $this->cartRepository->save($quote->collectTotals());
                     $itemId = $item->getId();
