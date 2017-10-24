@@ -11,7 +11,7 @@
         <section id="damagewaiver" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1"
                  showInStore="1">
             <class>separator-top</class>
-            <label>Damagewaiver</label>
+            <label>Damage Waiver</label>
             <tab>salesigniter</tab>
             <resource>Magento_Catalog::config_catalog</resource>
 

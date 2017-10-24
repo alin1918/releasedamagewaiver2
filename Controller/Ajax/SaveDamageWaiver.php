@@ -196,7 +196,7 @@ class SaveDamageWaiver extends \Magento\Framework\App\Action\Action
                 $itemOptions = $buyRequest->getOptions();
                 $currentProduct = $currentItem->getProduct();
                 foreach ($currentProduct->getOptions() as $option) {
-                    if ($option->getTitle() === 'Damage Waiver:') {
+                    if ($option->getTitle() === 'Damage Waiver') {
                         $optionDamageWaiverId = $option->getId();
                         break;
                     }
