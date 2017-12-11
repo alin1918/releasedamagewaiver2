@@ -17,7 +17,7 @@
 
             <group id="general" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1"
                    showInStore="1">
-                <label>Damagewaiver Settings</label>
+                <label>Damage Waiver Settings</label>
                 <field id="status" translate="label comment" type="select" sortOrder="1" showInDefault="1"
                        showInWebsite="1" showInStore="1">
                     <label>Status</label>
@@ -25,11 +25,11 @@
                 </field>
                 <field id="name" translate="label comment" type="text" sortOrder="2" showInDefault="1"
                        showInWebsite="1" showInStore="1">
-                    <label>Damagewaiver Name</label>
+                    <label>Damage Waiver Name</label>
                 </field>
                 <field id="damagewaiver_amount" translate="label comment" type="text" sortOrder="3" showInDefault="1"
                        showInWebsite="1" showInStore="1">
-                    <label>Damagewaiver Amount</label>
+                    <label>Damage Waiver Amount</label>
                     <comment>Accepts percent</comment>
                 </field>
                 <field id="damage_waiver_product_type" translate="label" type="multiselect" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
