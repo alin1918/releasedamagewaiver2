@@ -25,8 +25,9 @@ define([
             var price = 0;
             if (this.totals() && totals.getSegment('damagewaiver')) {
                 price = totals.getSegment('damagewaiver').value;
-            }
-            return price;
+            }            
+            
+            return priceUtils.formatPrice(price, quote.getPriceFormat());
         }
     });
 });

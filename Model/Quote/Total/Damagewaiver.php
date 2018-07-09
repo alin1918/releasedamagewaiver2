@@ -38,7 +38,7 @@ class Damagewaiver extends \Magento\Quote\Model\Quote\Address\Total\AbstractTota
         $enabled = $this->helperData->isModuleEnabled();
 
         if ($enabled) {
-            $fee = $this->helperData->getDamagewaiverAmount();
+            $fee = (float)$this->helperData->getDamagewaiverAmount();
 
             $total->setTotalAmount('damagewaiver', $fee);
             $total->setBaseTotalAmount('base_damagewaiver', $fee);
@@ -63,7 +63,7 @@ class Damagewaiver extends \Magento\Quote\Model\Quote\Address\Total\AbstractTota
     {
         $enabled = $this->helperData->isModuleEnabled();
 
-        $fee = $this->helperData->getDamagewaiverAmount();
+        $fee = (float)$this->helperData->getDamagewaiverAmount();
         $result = [];
         if ($enabled && $fee) {
             $result = [
